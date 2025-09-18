@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="en" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .out {
+        color: aquamarine;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Inline Event</h2>
+    <button onclock="showMessage()">Click Me</button>
+    <p id="msg" class="out"></p>
+    <script>
+      function showMessage() {
+        document.getElementById("msg").innerText = "Button clicked!";
+      }
+    </script>
+  </body>
+</html>
